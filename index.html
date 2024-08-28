@@ -1,7 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Sayatovic - User Interface I</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #007acc;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .bio,
+        .resume {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bio img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .resume a {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .resume a:hover {
+            background-color: #005999;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <header>
+        <h1>Jacob Sayatovic</h1>
+        <h2>User Interface I</h2>
+    </header>
+
+    <section class="bio">
+        <h2>About Me</h2>
+        <img src="me.jpg" alt="Jacob Sayatovic">
+        <p>Hi, I'm Jacob Sayatovic, a student enrolled in the User Interface I course. I'm passionate about creating user-friendly interfaces and exploring the intersection of design and functionality. In this course, I'll be documenting my projects and sharing my learning journey.</p>
+    </section>
+
+    <section class="resume">
+        <h2>Resume</h2>
+        <a href="outdated_resume.pdf" target="_blank">View My Resume</a>
+    </section>
+
+    <section class="projects">
+        <h2>Course Projects</h2>
+        <p>Here, I will document the projects I complete in the User Interface I course. Stay tuned for more updates!</p>
+        <!-- Example project -->
+        <div class="project">
+            <h3>Project 1: Basic UI Design</h3>
+            <p>Description of the project...</p>
+            <a href="link-to-project" target="_blank">View Project</a>
+        </div>
+    </section>
+
 </body>
+
 </html>
