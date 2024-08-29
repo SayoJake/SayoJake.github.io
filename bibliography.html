@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Sayatovic - [Page Title]</title>
+    <title>Jacob Sayatovic - Professional Bibliography</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,14 +21,6 @@
             position: relative;
         }
 
-        section {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
         h1 {
             font-size: 2.5em;
         }
@@ -37,15 +29,6 @@
             color: #007acc;
         }
 
-        h1-2 {
-            font-size: 2.0em;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        /* Hamburger menu styles */
         .hamburger {
             position: absolute;
             top: 20px;
@@ -107,6 +90,78 @@
                 display: flex;
             }
         }
+
+        .container {
+            display: flex;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-column {
+            flex: 30%;
+            padding: 20px;
+            background-color: #007acc;
+            color: white;
+            border-radius: 8px 0 0 8px;
+            text-align: center;
+        }
+
+        .left-column img {
+            border-radius: 50%;
+            width: 150px;
+            height: auto;
+        }
+
+        .right-column {
+            flex: 70%;
+            padding: 20px;
+        }
+
+        .core-competencies {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .core-competencies h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .core-competencies ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .core-competencies ul li {
+            margin-bottom: 10px;
+        }
+
+        .core-competencies ul li::before {
+            content: "▸";
+            color: white;
+            padding-right: 10px;
+        }
+
+        .right-column h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #007acc;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .project-sought {
+            margin-top: 40px;
+            font-size: 1.1em;
+            color: #333;
+        }
     </style>
 </head>
 
@@ -129,11 +184,46 @@
         </nav>
     </header>
 
-    <section>
-        <h2>Professional Bibliography</h2>
-        <p>[Page Content]</p>
-        <!-- Add your specific content for this page here -->
-    </section>
+    <div class="container">
+        <div class="left-column">
+            <img src="me.jpg" alt="Jacob Sayatovic">
+            <div class="core-competencies">
+                <h3>Core Competencies</h3>
+                <ul>
+                    <li>Technical Leadership</li>
+                    <li>Software Development</li>
+                    <li>Project Management</li>
+                    <li>Data Analysis</li>
+                    <li>Team Collaboration</li>
+                    <!-- Add more as needed -->
+                </ul>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>Professional Biography</h2>
+            <p>I am a fourth-year Computer Science major with an expected graduation date in May 2025. My journey in software development has been shaped by hands-on experience through multiple co-op rotations, where I have honed my skills in programming, problem-solving, and team collaboration.</p>
+
+            <h2>Co-op Work Experience</h2>
+            <p>
+                <strong>Job Title</strong>: Software Engineer Intern<br>
+                <strong>Company</strong>: Siemens Digital Industries Software<br>
+                <strong>Dates of Employment</strong>: May 2023 - August 2023, January 2024 - August 2024<br>
+                <strong>Technical Skills</strong>: Tcl/TK, C++, C, GitLab<br>
+                <strong>Non-Technical Skills</strong>: Communication, Mentorship, Agile Methodologies<br>
+                <br>
+                During my time at Siemens, I played a critical role in refactoring a legacy TCL code base to C and C++ to improve efficiency and address known issues such as data leaks. In my final rotation, I took on the additional responsibility of mentoring a new intern, ensuring they were brought up to speed and supported throughout the project.
+            </p>
+
+            <h2>Project Sought</h2>
+            <p class="project-sought">For my capstone, I am exploring ideas that involve the development of lossy compression algorithms optimized with AI, and the use of public free resources for storing large amounts of encrypted data. I am particularly interested in projects that allow me to leverage my programming skills and explore innovative solutions in data management and security.</p>
+
+            <p class="contact-info">
+                Jacob Sayatovic<br>
+                City, State ZIP | Phone: (555) 555-5555 | Email: sayatojb@mail.uc.edu, jacob@trinition.org<br>
+                LinkedIn: linkedin.com/in/yourprofile
+            </p>
+        </div>
+    </div>
 
     <script>
         function toggleMenu() {
