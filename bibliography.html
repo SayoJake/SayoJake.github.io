@@ -4,8 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Sayatovic - Professional Bibliography</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jacob Sayatovic - [Page Title]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #007acc;
+        }
+
+        h1-2 {
+            font-size: 2.0em;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Hamburger menu styles */
+        .hamburger {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 25px;
+            height: 20px;
+        }
+
+        .hamburger div {
+            width: 100%;
+            height: 3px;
+            background-color: white;
+        }
+
+        .nav-menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #007acc;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #005999;
+        }
+
+        .nav-menu a:hover {
+            background-color: #005999;
+        }
+
+        .nav-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .show {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu.show {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -29,11 +131,17 @@
 
     <section>
         <h2>Professional Bibliography</h2>
-        <p>This page will document your professional work, publications, and any relevant bibliographic information.</p>
-        <!-- Add your professional bibliography content here -->
+        <p>[Page Content]</p>
+        <!-- Add your specific content for this page here -->
     </section>
 
-    <script src="scripts.js"></script>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
 </body>
 
 </html>
