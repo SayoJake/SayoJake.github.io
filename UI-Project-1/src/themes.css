@@ -1,0 +1,57 @@
+/* src/themes.css */
+
+/* Default Light Theme */
+.theme-light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #e53e3e;
+  --button-background: #e53e3e;
+  --button-hover: #c53030;
+  --component-bg: #f9fafb;
+  --component-text: #1a202c;
+  --shadow-color: rgba(160, 174, 192, 0.6);
+}
+
+/* Dark Theme */
+.theme-dark {
+  --background-color: #121212;
+  --text-color: #f1f1f1;
+  --accent-color: #38a169;
+  --button-background: #38a169;
+  --button-hover: #2f855a;
+  --component-bg: #2d3748;
+  --component-text: #f9fafb;
+  --shadow-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Solarized Theme */
+.theme-solarized {
+  --background-color: #fdf6e3;
+  --text-color: #657b83;
+  --accent-color: #3182ce;
+  --button-background: #3182ce;
+  --button-hover: #2c5282;
+  --component-bg: #eee8d5;
+  --component-text: #657b83;
+  --shadow-color: rgba(101, 123, 131, 0.6);
+}
+
+/* Apply variables globally */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Components */
+.quick-log,
+.customization,
+.performance,
+.user-info,
+.entry,
+.edit-form {
+  background-color: var(--component-bg);
+  color: var(--component-text);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}

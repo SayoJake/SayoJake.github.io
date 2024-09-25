@@ -1,0 +1,149 @@
+/* public/global.css */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Styles */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Define a grid line color variable for charts */
+:root {
+  --grid-line-color: #e0e0e0;
+}
+
+/* Light Theme */
+.theme-light {
+  --background-color: #ffffff;
+  --text-color: #1a202c;
+  --component-bg: #f7f7f7;
+  --component-text: #1a202c;
+  --accent-color: #e53e3e; /* Red */
+  --input-bg: #ffffff;
+  --input-text: #1a202c;
+  --button-bg: #e53e3e;
+  --button-text: #ffffff;
+  --button-hover-bg: #c53030;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --grid-line-color: #e0e0e0; /* Light grey for grid lines */
+}
+
+/* Dark Theme */
+.theme-dark {
+  --background-color: #1a202c;
+  --text-color: #f7fafc;
+  --component-bg: #2d3748;
+  --component-text: #f7fafc;
+  --accent-color: #e53e3e; /* Red */
+  --input-bg: #2d3748;
+  --input-text: #f7fafc;
+  --button-bg: #e53e3e;
+  --button-text: #ffffff;
+  --button-hover-bg: #c53030;
+  --shadow-color: rgba(0, 0, 0, 0.6);
+  --grid-line-color: #4a5568; /* Dark grey for grid lines */
+}
+
+/* Solarized Theme */
+.theme-solarized {
+  --background-color: #fdf6e3; /* Tan */
+  --text-color: #657b83;
+  --component-bg: #eee8d5;
+  --component-text: #657b83;
+  --accent-color: #e53e3e; /* Red */
+  --input-bg: #eee8d5;
+  --input-text: #657b83;
+  --button-bg: #e53e3e;
+  --button-text: #ffffff;
+  --button-hover-bg: #c53030;
+  --shadow-color: rgba(101, 123, 131, 0.6);
+  --grid-line-color: #93a1a1; /* Solarized grid lines */
+}
+
+
+/* Apply component styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.quick-log,
+.customization,
+.performance,
+.user-info,
+.entry,
+.edit-form {
+  background-color: var(--component-bg);
+  color: var(--component-text);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--component-text);
+}
+
+/* Input Styles */
+input, select, textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--accent-color);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: var(--input-text);
+  opacity: 0.7;
+}
+
+input:focus {
+  border-color: var(--button-hover-bg);
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+/* Centering Content */
+.container, main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container, main {
+    padding: 10px;
+  }
+}
